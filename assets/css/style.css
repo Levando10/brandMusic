@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.clear{
+ clear: both;
+}
+/*       Row */
+.row2{
+margin-left: -8px;
+margin-right: -8px;
+}
+.col{
+    padding-left:8px;
+    padding-right:8px;
+    float: left;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+width: 50%;
+}
+.col-third{
+width: 33.333%;
+}
+.text-white{
+    color: #fff !important;
+}
+.row2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+#nav{
+    display: inline-block;
+}
+/* xuli header full */
+#header {
+    background-position: top center;
+    height: 46.5px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* suli subnav */
+
+#nav, .subnav {
+    list-style-type: none;
+   
+    
+}
+#nav{
+    padding-left: 0;
+}
+#nav .subnav {
+    padding-left: 0px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#nav li:hover .subnav {
+    display: block;
+    transition: 0.3s;
+}
+
+#nav .subnav li a {
+    color: #000;
+    background-color: #fff;
+
+    padding: 0px 16px;
+    min-width: 160px;
+    line-height: 38.5px;
+}
+
+/* xu li nav  */
+
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    padding: 0px 24px;
+    line-height: 46.5px;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000 ;
+    background-color: #ccc ;
+    transition: 0.3s;
+    
+}
+
+/* xuli icon */
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+
+/* search icon */
+#header .search-btn{
+  float: right;
+  padding: 0 25px;
+  cursor: pointer;
+}
+#header .search-icon{
+   font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    line-height: 46px;  
+}
+#header .search-btn:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+/* xu li slider */
+
+#slider {
+    background-image: url('/assets/img/chicago.jpg');
+    background-size: cover;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* xu li text slider */
+#slider .text-slider{
+    position: absolute;
+    color: #fff;
+    bottom: 54px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;  
+}
+#slider .text-heading{
+  font-weight: 350;
+  font-size: 24px;
+ 
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+/* xu li content  */
+#content {
+
+
+}
+.content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* xuli heading */
+#content .section-heading{
+   font-size: 30px;
+   margin-top: 15px;
+   text-align: center;
+  font-weight: 400;
+  letter-spacing: 4px; 
+}
+/* xu li img content about section*/
+#content .member-list{
+ margin-top:50px;
+
+}
+.text-center{
+    text-align: center;
+}
+#content  .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+   
+}
+
+/* xu li sub heading */
+#content .section-sub-heading{
+   text-align: center;
+   font-size: 15px;
+   font-style: italic;
+   margin-top: 25px;
+   opacity: 0.7;
+   
+}
+#content .about-text{
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 25px;
+   line-height: 1.4;
+}
+/* xu li tour section */
+.tour-section{
+    background-color: #000;
+    height: 1000px;
+   
+}
+.tour-list {
+    border: 1px solid rgb(117, 117, 117);
+    background-color: #fff;
+    list-style: none;
+    color: rgb(117, 117, 117);
+    margin-top: 40px;
+    padding-left: 0;
+    border-bottom: 0;
+}
+.tour-list li{
+    border-bottom: 1px solid rgb(117, 117, 117);
+    padding: 8px 16px 8px 16px;
+  
+}
+.tour-list .sold-out{
+    background-color: #f44336!important;
+    color: white;
+    text-align: center;
+    margin-left: 16px;
+    padding: 0 8px;
+}
+/* xuli 3 */
+.tour-list .quanlity{
+margin-left: 84%;
+border-radius: 50%;
+background-color: #000;
+padding: 0 8px;
+color: white;
+}
+/*        xuli place list */
+.places-list{
+    margin-top: 32px;;
+    margin-bottom: 48px;
+    
+
+}
+.place-item{
+  width: 33.333%;
+ float: left;
+  padding:0 8px;
+
+}
+.place-img{
+    width: 100%;
+    display: block;
+height: 192px;
+cursor: pointer;
+}
+.place-img:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+/* xu li place body*/
+.place-body{
+   padding: 16px;
+   background-color: #fff;
+   font-size: 15px;
+}
+.place-buy{
+    padding: 8px 16px;
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.place-buy:hover{
+    background-color: #ccc;
+    color: #000;
+    transition: .4s;
+}
+.places-list .place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-day{
+    opacity: 0.1;
+}
+.text-place{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.day-place{
+margin-top: 15px;
+}
+
+
+#footer {
+}
+
+/* modal tickket */
+.modas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    
+   
+}
+ header.modal-header{
+    height: 130px;
+    background-color: #0f877b;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+    font-weight: 400;
+}
+/* icon bag */
+.ti-bag{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    color: #fff;
+   top: 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  opacity: 3.9;
+}
+.modal-close:hover{
+    background-color:#ccc;
+    color: #333;
+    opacity: 1;
+    transition: 0.3s;
+}
+/* loi~ modal khong padding duoc ma magrrin dc  */
+.modal-body2{
+  padding:16px;
+}
+.modal-label{
+    font-size: 16px;
+    display: block;
+    margin: 16px 0;
+}
+.modal-input{
+    padding: 8px;
+    width: 836px; 
+    border: 1px solid #ccc;
+}
+/* buu ticket */
+#buy-tickets{
+    display: block;
+    padding: 16px;
+   background-color: #009688;
+   color: #fff;
+    width: 865px;
+    border: 1px solid #ccc;
+    margin-top: 16px;
+text-transform: uppercase;
+}
+#buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+    opacity: 0.9;
+}
+.modal-footer{
+    margin: 15px;
+}
+
+/* open */
+.modas.open{
+    display: flex;
+}
+/*                  contat     */
+.contact-content{
+    padding: 32px 0;
+}
+.contact-info{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form .form-control{
+    border: 0.8px solid rgb(204, 204, 204);
+    padding: 10px;
+    border-radius: 0;
+    
+    width: 100%;
+}
+.form-send{
+    background: #000;
+    font-size: 15px;
+    margin: 16px 0;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    float: right;
+}
+.form-send:hover{
+    background: #ccc;
+    color: #000;
+    transition: 0.2s;
+ 
+}
+
+/* map section */
+.map-section img{
+width: 100%;
+}
+
+  /* foooter  */
+#footer .social-list a{
+text-decoration: none;
+}
+
+#footer{
+    text-align: center;
+    padding: 64px 16px;
+    list-style-type: none;
+    
+    box-sizing: border-box;
+}
+#footer .social-list{
+    font-size: 24px;
+   transition: 0.4s;
+   margin-bottom: 16px;
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .social-list a:hover{
+    opacity: 0.8;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+}
+
+/* animation */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal-container{
+    animation: modalFadeIn ease 0.5s;
+}
+
+/* pc>=1024 
+table >=740 <1024
+mobile <740
+
+*/
